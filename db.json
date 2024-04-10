@@ -2,7 +2,7 @@
     "plants": [
         {
             "id": "1",
-            "name": "plant_1",
+            "name": "Krakow Solar Farm",
             "address": "Krakow, Poland",
             "latitude": [
                 50.0614,
@@ -33,7 +33,7 @@
         },
         {
             "id": "2",
-            "name": "plant_2",
+            "name": "Warsaw Wind Turbine",
             "address": "Warsaw, Poland",
             "latitude": [
                 52.2297,
@@ -64,7 +64,7 @@
         },
         {
             "id": "3",
-            "name": "plant_3",
+            "name": "Gdansk Hydro Power",
             "address": "Gdansk, Poland",
             "latitude": [
                 54.3520,
@@ -92,6 +92,32 @@
                 "PLN"
             ],
             "status": "maintenance"
+        }
+    ],
+    "clients_plants_rel": [
+        {
+            "id": 1,
+            "name": "client_1",
+            "children": [
+                {
+                    "id": "1",
+                    "name": "plant_1"
+                },
+                {
+                    "id": "2",
+                    "name": "plant_2"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "client_2",
+            "children": [
+                {
+                    "id": "3",
+                    "name": "plant_3"
+                }
+            ]
         }
     ]
 }
