@@ -1,7 +1,7 @@
 {
     "plants": [
         {
-            "id": "1",
+            "id": "2001",
             "name": "Krakow Solar Farm",
             "address": "Krakow, Poland",
             "latitude": [
@@ -12,7 +12,7 @@
                 19.9366,
                 "degrees"
             ],
-            "client_id": "1",
+            "client_id": "1001",
             "production": [
                 1200,
                 "kW"
@@ -32,7 +32,7 @@
             "status": "operational"
         },
         {
-            "id": "2",
+            "id": "2002",
             "name": "Warsaw Wind Turbine",
             "address": "Warsaw, Poland",
             "latitude": [
@@ -43,7 +43,7 @@
                 21.0122,
                 "degrees"
             ],
-            "client_id": "1",
+            "client_id": "1001",
             "production": [
                 1500,
                 "kW"
@@ -63,7 +63,7 @@
             "status": "operational"
         },
         {
-            "id": "3",
+            "id": "2003",
             "name": "Gdansk Hydro Power",
             "address": "Gdansk, Poland",
             "latitude": [
@@ -74,7 +74,7 @@
                 18.6466,
                 "degrees"
             ],
-            "client_id": "2",
+            "client_id": "1002",
             "production": [
                 500,
                 "kW"
@@ -96,25 +96,25 @@
     ],
     "clients_plants_rel": [
         {
-            "id": 1,
+            "id": 1001,
             "name": "client_1",
             "children": [
                 {
-                    "id": "1",
+                    "id": "2001",
                     "name": "plant_1"
                 },
                 {
-                    "id": "2",
+                    "id": "2002",
                     "name": "plant_2"
                 }
             ]
         },
         {
-            "id": 2,
+            "id": 1002,
             "name": "client_2",
             "children": [
                 {
-                    "id": "3",
+                    "id": "2003",
                     "name": "plant_3"
                 }
             ]
