@@ -12,7 +12,7 @@
                 19.9366,
                 "degrees"
             ],
-            "client_id": "a1b2c3d4",
+            "client_id": "1",
             "production": [
                 1200,
                 "kW"
@@ -43,7 +43,7 @@
                 21.0122,
                 "degrees"
             ],
-            "client_id": "e5f6g7h8",
+            "client_id": "1",
             "production": [
                 1500,
                 "kW"
@@ -74,7 +74,7 @@
                 18.6466,
                 "degrees"
             ],
-            "client_id": "i9j0k1l2",
+            "client_id": "2",
             "production": [
                 500,
                 "kW"
