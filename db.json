@@ -2,7 +2,7 @@
     "plants": [
         {
             "id": "1",
-            "name": "Krakow Solar Farm",
+            "name": "plant_1",
             "address": "Krakow, Poland",
             "latitude": [
                 50.0614,
@@ -33,7 +33,7 @@
         },
         {
             "id": "2",
-            "name": "Warsaw Wind Turbine",
+            "name": "plant_2",
             "address": "Warsaw, Poland",
             "latitude": [
                 52.2297,
@@ -64,7 +64,7 @@
         },
         {
             "id": "3",
-            "name": "Gdansk Hydro Power",
+            "name": "plant_3",
             "address": "Gdansk, Poland",
             "latitude": [
                 54.3520,
