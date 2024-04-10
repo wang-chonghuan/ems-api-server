@@ -1,13 +1,97 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "plants": [
+        {
+            "id": "1",
+            "name": "Krakow Solar Farm",
+            "address": "Krakow, Poland",
+            "latitude": [
+                50.0614,
+                "degrees"
+            ],
+            "longitude": [
+                19.9366,
+                "degrees"
+            ],
+            "client_id": "a1b2c3d4",
+            "production": [
+                1200,
+                "kW"
+            ],
+            "grid_export": [
+                800,
+                "kW"
+            ],
+            "performance": [
+                95,
+                "%"
+            ],
+            "earnings": [
+                48000,
+                "PLN"
+            ],
+            "status": "operational"
+        },
+        {
+            "id": "2",
+            "name": "Warsaw Wind Turbine",
+            "address": "Warsaw, Poland",
+            "latitude": [
+                52.2297,
+                "degrees"
+            ],
+            "longitude": [
+                21.0122,
+                "degrees"
+            ],
+            "client_id": "e5f6g7h8",
+            "production": [
+                1500,
+                "kW"
+            ],
+            "grid_export": [
+                1000,
+                "kW"
+            ],
+            "performance": [
+                90,
+                "%"
+            ],
+            "earnings": [
+                60000,
+                "PLN"
+            ],
+            "status": "operational"
+        },
+        {
+            "id": "3",
+            "name": "Gdansk Hydro Power",
+            "address": "Gdansk, Poland",
+            "latitude": [
+                54.3520,
+                "degrees"
+            ],
+            "longitude": [
+                18.6466,
+                "degrees"
+            ],
+            "client_id": "i9j0k1l2",
+            "production": [
+                500,
+                "kW"
+            ],
+            "grid_export": [
+                300,
+                "kW"
+            ],
+            "performance": [
+                85,
+                "%"
+            ],
+            "earnings": [
+                20000,
+                "PLN"
+            ],
+            "status": "maintenance"
+        }
+    ]
 }
