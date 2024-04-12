@@ -1,4 +1,5 @@
 {
+    "api_version": 1,
     "plants": [
         {
             "id": "2001",
@@ -120,5 +121,36 @@
             ]
         }
     ],
-    "clients_plants_rel_test": []
+    "plants_static": [
+        {
+            "id": "2001",
+            "static_content": {
+                "Operational Since": "2023",
+                "Capacity": "200 kWh",
+                "Technology": "Lithium-ion Batteries",
+                "Contact Person": "John Doe",
+                "Phone Number": "+1234567890"
+            }
+        },
+        {
+            "id": "2002",
+            "static_content": {
+                "Start Date": "2024",
+                "Storage Capacity": "300 kWh",
+                "Battery Type": "Solid State",
+                "Coordinator": "Jane Smith",
+                "Contact": "+1987654321"
+            }
+        },
+        {
+            "id": "2003",
+            "static_content": {
+                "Commissioned": "2025",
+                "Max Capacity": "250 kWh",
+                "Tech": "Flow Batteries",
+                "Manager": "Emily Clark",
+                "Telephone": "+1122334455"
+            }
+        }
+    ]
 }
