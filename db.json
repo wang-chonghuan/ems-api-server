@@ -1,125 +1,1762 @@
-
 {
-    "plants": [
+  "api_version": 1,
+  "plants": [
+    {
+      "id": "2001",
+      "name": "Krakow Solar Farm",
+      "address": "Krakow, Poland",
+      "latitude": [
+        50.0614,
+        "degrees"
+      ],
+      "longitude": [
+        19.9366,
+        "degrees"
+      ],
+      "client_id": "1001",
+      "production": [
+        1200,
+        "kW"
+      ],
+      "grid_export": [
+        800,
+        "kW"
+      ],
+      "performance": [
+        95,
+        "%"
+      ],
+      "earnings": [
+        48000,
+        "PLN"
+      ],
+      "status": "operational"
+    },
+    {
+      "id": "2002",
+      "name": "Warsaw Wind Turbine",
+      "address": "Warsaw, Poland",
+      "latitude": [
+        52.2297,
+        "degrees"
+      ],
+      "longitude": [
+        21.0122,
+        "degrees"
+      ],
+      "client_id": "1001",
+      "production": [
+        1500,
+        "kW"
+      ],
+      "grid_export": [
+        1000,
+        "kW"
+      ],
+      "performance": [
+        90,
+        "%"
+      ],
+      "earnings": [
+        60000,
+        "PLN"
+      ],
+      "status": "operational"
+    },
+    {
+      "id": "2003",
+      "name": "Gdansk Hydro Power",
+      "address": "Gdansk, Poland",
+      "latitude": [
+        54.352,
+        "degrees"
+      ],
+      "longitude": [
+        18.6466,
+        "degrees"
+      ],
+      "client_id": "1002",
+      "production": [
+        500,
+        "kW"
+      ],
+      "grid_export": [
+        300,
+        "kW"
+      ],
+      "performance": [
+        85,
+        "%"
+      ],
+      "earnings": [
+        20000,
+        "PLN"
+      ],
+      "status": "maintenance"
+    }
+  ],
+  "clients_plants_rel": [
+    {
+      "id": 1001,
+      "name": "client_1",
+      "children": [
         {
-            "id": "2001",
-            "name": "Krakow Solar Farm",
-            "address": "Krakow, Poland",
-            "latitude": [
-                50.0614,
-                "degrees"
-            ],
-            "longitude": [
-                19.9366,
-                "degrees"
-            ],
-            "client_id": "1001",
-            "production": [
-                1200,
-                "kW"
-            ],
-            "grid_export": [
-                800,
-                "kW"
-            ],
-            "performance": [
-                95,
-                "%"
-            ],
-            "earnings": [
-                48000,
-                "PLN"
-            ],
-            "status": "operational"
+          "id": "2001",
+          "name": "Krakow Solar Farm"
         },
         {
-            "id": "2002",
-            "name": "Warsaw Wind Turbine",
-            "address": "Warsaw, Poland",
-            "latitude": [
-                52.2297,
-                "degrees"
-            ],
-            "longitude": [
-                21.0122,
-                "degrees"
-            ],
-            "client_id": "1001",
-            "production": [
-                1500,
-                "kW"
-            ],
-            "grid_export": [
-                1000,
-                "kW"
-            ],
-            "performance": [
-                90,
-                "%"
-            ],
-            "earnings": [
-                60000,
-                "PLN"
-            ],
-            "status": "operational"
-        },
-        {
-            "id": "2003",
-            "name": "Gdansk Hydro Power",
-            "address": "Gdansk, Poland",
-            "latitude": [
-                54.3520,
-                "degrees"
-            ],
-            "longitude": [
-                18.6466,
-                "degrees"
-            ],
-            "client_id": "1002",
-            "production": [
-                500,
-                "kW"
-            ],
-            "grid_export": [
-                300,
-                "kW"
-            ],
-            "performance": [
-                85,
-                "%"
-            ],
-            "earnings": [
-                20000,
-                "PLN"
-            ],
-            "status": "maintenance"
+          "id": "2002",
+          "name": "Warsaw Wind Turbine"
         }
-    ],
-    "clients_plants_rel": [
+      ]
+    },
+    {
+      "id": 1002,
+      "name": "client_2",
+      "children": [
         {
-            "id": 1001,
-            "name": "client_1",
-            "children": [
-                {
-                    "id": "2001",
-                    "name": "plant_1"
-                },
-                {
-                    "id": "2002",
-                    "name": "plant_2"
-                }
-            ]
+          "id": "2003",
+          "name": "Gdansk Hydro Power"
+        }
+      ]
+    }
+  ],
+  "plants_static": [
+    {
+      "id": "2001",
+      "static_content": [
+        {
+          "label": "id",
+          "value": "2001"
         },
         {
-            "id": 1002,
-            "name": "client_2",
-            "children": [
-                {
-                    "id": "2003",
-                    "name": "plant_3"
-                }
-            ]
+          "label": "name",
+          "value": "Krakow Solar Farm"
+        },
+        {
+          "label": "address",
+          "value": "Krakow, Poland"
+        },
+        {
+          "label": "Operational Since",
+          "value": "2023"
+        },
+        {
+          "label": "Capacity",
+          "value": "200 kWh"
+        },
+        {
+          "label": "Technology",
+          "value": "Lithium-ion Batteries"
+        },
+        {
+          "label": "Contact Person",
+          "value": "John Doe"
+        },
+        {
+          "label": "Phone Number",
+          "value": "+1234567890"
         }
-    ],
-    "clients_plants_rel_test": []
+      ]
+    },
+    {
+      "id": "2002",
+      "static_content": [
+        {
+          "label": "id",
+          "value": "2002"
+        },
+        {
+          "label": "name",
+          "value": "Warsaw Wind Turbine"
+        },
+        {
+          "label": "address",
+          "value": "Warsaw, Poland"
+        },
+        {
+          "label": "Start Date",
+          "value": "2024"
+        },
+        {
+          "label": "Storage Capacity",
+          "value": "300 kWh"
+        },
+        {
+          "label": "Battery Type",
+          "value": "Solid State"
+        },
+        {
+          "label": "Coordinator",
+          "value": "Jane Smith"
+        },
+        {
+          "label": "Contact",
+          "value": "+1987654321"
+        }
+      ]
+    },
+    {
+      "id": "2003",
+      "static_content": [
+        {
+          "label": "id",
+          "value": "2003"
+        },
+        {
+          "label": "name",
+          "value": "Gdansk Hydro Power"
+        },
+        {
+          "label": "address",
+          "value": "Gdansk, Poland"
+        },
+        {
+          "label": "Commissioned",
+          "value": "2025"
+        },
+        {
+          "label": "Max Capacity",
+          "value": "250 kWh"
+        },
+        {
+          "label": "Tech",
+          "value": "Flow Batteries"
+        },
+        {
+          "label": "Manager",
+          "value": "Emily Clark"
+        },
+        {
+          "label": "Telephone",
+          "value": "+1122334455"
+        }
+      ]
+    }
+  ],
+  "components_static": [
+    {
+      "component_type": "ess",
+      "static_content": [
+        {
+          "label": "Model",
+          "value": "ESS-X100"
+        },
+        {
+          "label": "Capacity",
+          "value": "100 kWh"
+        },
+        {
+          "label": "Peak Power",
+          "value": "50 kW"
+        },
+        {
+          "label": "Efficiency",
+          "value": "95%"
+        },
+        {
+          "label": "Battery Type",
+          "value": "Lithium-ion"
+        },
+        {
+          "label": "Lifetime",
+          "value": "10 years / 5000 cycles"
+        },
+        {
+          "label": "Operational Temperature",
+          "value": "-20,60 C"
+        },
+        {
+          "label": "Communication",
+          "value": "Modbus, CAN"
+        },
+        {
+          "label": "Certifications",
+          "value": "UL, CE"
+        },
+        {
+          "label": "Dimensions",
+          "value": "1200 x 800 x 600 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "450 kg"
+        }
+      ]
+    },
+    {
+      "component_type": "dso",
+      "static_content": [
+        {
+          "label": "Model",
+          "value": "DSO-X500"
+        },
+        {
+          "label": "Capacity",
+          "value": "500 kVA"
+        },
+        {
+          "label": "Efficiency",
+          "value": "98%"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "400 V"
+        },
+        {
+          "label": "Communication",
+          "value": "Modbus, Ethernet"
+        },
+        {
+          "label": "Certifications",
+          "value": "UL, CE, IEC"
+        },
+        {
+          "label": "Dimensions",
+          "value": "1500 x 1200 x 800 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "800 kg"
+        }
+      ]
+    },
+    {
+      "component_type": "fss",
+      "static_content": [
+        {
+          "label": "Model",
+          "value": "FSS-X200"
+        },
+        {
+          "label": "Capacity",
+          "value": "200 kW"
+        },
+        {
+          "label": "Efficiency",
+          "value": "97%"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "400 V"
+        },
+        {
+          "label": "Communication",
+          "value": "Modbus, Ethernet"
+        },
+        {
+          "label": "Certifications",
+          "value": "UL, CE, IEC"
+        },
+        {
+          "label": "Dimensions",
+          "value": "1800 x 1200 x 600 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "700 kg"
+        }
+      ]
+    },
+    {
+      "component_type": "general",
+      "static_content": [
+        {
+          "label": "System Name",
+          "value": "Renewable Energy Storage System"
+        },
+        {
+          "label": "Location",
+          "value": "California, USA"
+        },
+        {
+          "label": "Capacity",
+          "value": "1 MW / 2 MWh"
+        },
+        {
+          "label": "Application",
+          "value": "Grid-tied, Commercial"
+        },
+        {
+          "label": "Installation Date",
+          "value": "2021"
+        }
+      ]
+    },
+    {
+      "component_type": "hvac",
+      "static_content": [
+        {
+          "label": "Model",
+          "value": "HVAC-X300"
+        },
+        {
+          "label": "Cooling Capacity",
+          "value": "30 kW"
+        },
+        {
+          "label": "Heating Capacity",
+          "value": "25 kW"
+        },
+        {
+          "label": "Efficiency",
+          "value": "SEER 16, HSPF 9"
+        },
+        {
+          "label": "Refrigerant",
+          "value": "R-410A"
+        },
+        {
+          "label": "Communication",
+          "value": "Modbus, BACnet"
+        },
+        {
+          "label": "Dimensions",
+          "value": "1500 x 800 x 600 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "200 kg"
+        }
+      ]
+    },
+    {
+      "component_type": "meter",
+      "static_content": [
+        {
+          "label": "Model",
+          "value": "Meter-X100"
+        },
+        {
+          "label": "Type",
+          "value": "Bidirectional"
+        },
+        {
+          "label": "Accuracy",
+          "value": "0.2% ANSI C12.20"
+        },
+        {
+          "label": "Voltage",
+          "value": "120-480 V"
+        },
+        {
+          "label": "Current",
+          "value": "5 A"
+        },
+        {
+          "label": "Communication",
+          "value": "Modbus, Ethernet"
+        },
+        {
+          "label": "Certifications",
+          "value": "UL, CE, IEC"
+        },
+        {
+          "label": "Dimensions",
+          "value": "200 x 150 x 100 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "2 kg"
+        }
+      ]
+    },
+    {
+      "component_type": "pcs",
+      "static_content": [
+        {
+          "label": "Model",
+          "value": "PCS-X500"
+        },
+        {
+          "label": "Capacity",
+          "value": "500 kW"
+        },
+        {
+          "label": "Efficiency",
+          "value": "98.5%"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "400-800 V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "400 V"
+        },
+        {
+          "label": "Communication",
+          "value": "Modbus, Ethernet"
+        },
+        {
+          "label": "Certifications",
+          "value": "UL, CE, IEC"
+        },
+        {
+          "label": "Dimensions",
+          "value": "2000 x 1200 x 800 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "1000 kg"
+        }
+      ]
+    }
+  ],
+  "plants_components": [
+    {
+      "id": "2001",
+      "components": [
+        {
+          "component_name": "DSO",
+          "component_id": 3001,
+          "description": "Description for DSO 2001",
+          "status": "Active"
+        },
+        {
+          "component_name": "ESS",
+          "component_id": 3002,
+          "description": "Description for ESS",
+          "status": "Inactive"
+        },
+        {
+          "component_name": "FSS",
+          "component_id": 3003,
+          "description": "Description for FSS",
+          "status": "Maintenance"
+        },
+        {
+          "component_name": "General",
+          "component_id": 3004,
+          "description": "Description for General",
+          "status": "Error"
+        },
+        {
+          "component_name": "HVAC",
+          "component_id": 3005,
+          "description": "Description for HVAC",
+          "status": "Active"
+        },
+        {
+          "component_name": "Meter",
+          "component_id": 3006,
+          "description": "Description for Meter",
+          "status": "Inactive"
+        },
+        {
+          "component_name": "PCS",
+          "component_id": 3007,
+          "description": "Description for PCS",
+          "status": "Maintenance"
+        }
+      ]
+    },
+    {
+      "id": "2002",
+      "components": [
+        {
+          "component_name": "DSO",
+          "component_id": 3008,
+          "description": "Description for DSO 2002",
+          "status": "Active"
+        },
+        {
+          "component_name": "ESS",
+          "component_id": 3009,
+          "description": "Description for ESS",
+          "status": "Inactive"
+        },
+        {
+          "component_name": "FSS",
+          "component_id": 3010,
+          "description": "Description for FSS",
+          "status": "Maintenance"
+        },
+        {
+          "component_name": "General",
+          "component_id": 3011,
+          "description": "Description for General",
+          "status": "Error"
+        },
+        {
+          "component_name": "HVAC",
+          "component_id": 3012,
+          "description": "Description for HVAC",
+          "status": "Active"
+        },
+        {
+          "component_name": "Meter",
+          "component_id": 3013,
+          "description": "Description for Meter",
+          "status": "Inactive"
+        },
+        {
+          "component_name": "PCS",
+          "component_id": 3014,
+          "description": "Description for PCS",
+          "status": "Maintenance"
+        }
+      ]
+    },
+    {
+      "id": "2003",
+      "components": [
+        {
+          "component_name": "DSO",
+          "component_id": 3015,
+          "description": "Description for DSO 2003",
+          "status": "Active"
+        },
+        {
+          "component_name": "ESS",
+          "component_id": 3016,
+          "description": "Description for ESS",
+          "status": "Inactive"
+        },
+        {
+          "component_name": "FSS",
+          "component_id": 3017,
+          "description": "Description for FSS",
+          "status": "Maintenance"
+        },
+        {
+          "component_name": "General",
+          "component_id": 3018,
+          "description": "Description for General",
+          "status": "Error"
+        },
+        {
+          "component_name": "HVAC",
+          "component_id": 3019,
+          "description": "Description for HVAC",
+          "status": "Active"
+        },
+        {
+          "component_name": "Meter",
+          "component_id": 3020,
+          "description": "Description for Meter",
+          "status": "Inactive"
+        },
+        {
+          "component_name": "PCS",
+          "component_id": 3021,
+          "description": "Description for PCS",
+          "status": "Maintenance"
+        }
+      ]
+    }
+  ],
+  "component_parameter_template": [
+    {
+      "component": "hvac",
+      "format": [
+        "key",
+        "name",
+        "unit",
+        "data_type",
+        "access"
+      ],
+      "parameters": [
+        [
+          "temperature_req.",
+          "Temperature req.",
+          "degC",
+          "Float",
+          "W"
+        ],
+        [
+          "actual_temp.",
+          "Actual temp.",
+          "degC",
+          "Float",
+          "R"
+        ],
+        [
+          "status",
+          "Status",
+          "-",
+          "Enum",
+          "R"
+        ],
+        [
+          "power_usage",
+          "Power usage",
+          "W",
+          "Float",
+          "R"
+        ]
+      ]
+    },
+    {
+      "component": "general",
+      "format": [
+        "key",
+        "name",
+        "unit",
+        "data_type",
+        "access"
+      ],
+      "parameters": [
+        [
+          "working_mode_req.",
+          "Working mode req.",
+          "-",
+          "Enum",
+          "W"
+        ],
+        [
+          "power_schedule",
+          "Power schedule",
+          "-",
+          "List[4*24]",
+          "W"
+        ],
+        [
+          "total_energy",
+          "Total energy",
+          "kWh",
+          "Float",
+          "R"
+        ],
+        [
+          "actual_working_mode",
+          "Actual working mode",
+          "-",
+          "Enum",
+          "R"
+        ],
+        [
+          "actual_power_schedule",
+          "Actual power schedule",
+          "-",
+          "Float",
+          "R"
+        ]
+      ]
+    },
+    {
+      "component": "fss",
+      "format": [
+        "key",
+        "name",
+        "unit",
+        "data_type",
+        "access"
+      ],
+      "parameters": [
+        [
+          "status",
+          "Status",
+          "-",
+          "Enum",
+          "R"
+        ]
+      ]
+    },
+    {
+      "component": "dso",
+      "format": [
+        "key",
+        "name",
+        "unit",
+        "data_type",
+        "access"
+      ],
+      "parameters": [
+        [
+          "communication_status",
+          "Communication status",
+          "-",
+          "Enum",
+          "R"
+        ],
+        [
+          "request_status",
+          "Request status",
+          "-",
+          "Enum",
+          "R"
+        ]
+      ]
+    },
+    {
+      "component": "pcs",
+      "format": [
+        "key",
+        "name",
+        "unit",
+        "data_type",
+        "access"
+      ],
+      "parameters": [
+        [
+          "active_power_req.",
+          "Active Power req.",
+          "VA",
+          "Float",
+          "W"
+        ],
+        [
+          "reactive_power_req.",
+          "Reactive Power req.",
+          "Var",
+          "Float",
+          "W"
+        ],
+        [
+          "mode_req.",
+          "Mode req.",
+          "-",
+          "Enum",
+          "W"
+        ],
+        [
+          "frequency_req.",
+          "Frequency req.",
+          "Hz",
+          "Float",
+          "W"
+        ],
+        [
+          "total_power",
+          "Total Power",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "voltage_dc",
+          "Voltage DC",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "current_dc",
+          "Current DC",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "voltage_l1",
+          "Voltage L1",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "voltage_l2",
+          "Voltage L2",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "voltage_l3",
+          "Voltage L3",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "current_l1",
+          "Current L1",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "current_l2",
+          "Current L2",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "current_l3",
+          "Current L3",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "total_active_power",
+          "Total active power",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "total_power",
+          "Total power",
+          "VA",
+          "Float",
+          "R"
+        ],
+        [
+          "total_reactive_power",
+          "Total reactive power",
+          "Var",
+          "Float",
+          "R"
+        ],
+        [
+          "frequency",
+          "Frequency",
+          "Hz",
+          "Float",
+          "R"
+        ]
+      ]
+    },
+    {
+      "component": "ess",
+      "format": [
+        "key",
+        "name",
+        "unit",
+        "data_type",
+        "access"
+      ],
+      "parameters": [
+        [
+          "min_soc_req.",
+          "Min SoC req.",
+          "%",
+          "Float",
+          "W"
+        ],
+        [
+          "max_soc_req.",
+          "Max SoC req.",
+          "%",
+          "Float",
+          "W"
+        ],
+        [
+          "voltage",
+          "Voltage",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "current",
+          "Current",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "dmcc",
+          "DMCC",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "dmdc",
+          "DMDC",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "soc",
+          "SoC",
+          "%",
+          "Float",
+          "R"
+        ],
+        [
+          "soh",
+          "SoH",
+          "%",
+          "Float",
+          "R"
+        ],
+        [
+          "temperature",
+          "Temperature",
+          "degC",
+          "Float",
+          "R"
+        ],
+        [
+          "status",
+          "Status",
+          "-",
+          "Enum",
+          "R"
+        ],
+        [
+          "communication_status",
+          "Communication status",
+          "-",
+          "Enum",
+          "R"
+        ],
+        [
+          "nom_discharging_power",
+          "Nom discharging power",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "nom_charging_power",
+          "Nom charging power",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "total_energy_",
+          "Total energy ",
+          "Wh",
+          "Float",
+          "R"
+        ],
+        [
+          "usable_energy",
+          "Usable energy",
+          "Wh",
+          "Float",
+          "R"
+        ],
+        [
+          "min_soc",
+          "Min SoC",
+          "%",
+          "Float",
+          "R"
+        ],
+        [
+          "max_soc",
+          "Max SoC",
+          "%",
+          "Float",
+          "R"
+        ],
+        [
+          "max_dsg._time",
+          "Max dsg. time",
+          "s",
+          "Float",
+          "R"
+        ],
+        [
+          "max_chg._time",
+          "Max chg. time",
+          "s",
+          "Float",
+          "R"
+        ],
+        [
+          "nominal_efficiency",
+          "Nominal efficiency",
+          "%",
+          "Float",
+          "R"
+        ],
+        [
+          "nominal_voltage",
+          "Nominal voltage",
+          "V",
+          "Float",
+          "R"
+        ]
+      ]
+    },
+    {
+      "component": "meter",
+      "format": [
+        "key",
+        "name",
+        "unit",
+        "data_type",
+        "access"
+      ],
+      "parameters": [
+        [
+          "voltage_l1",
+          "Voltage L1",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "voltage_l2",
+          "Voltage L2",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "voltage_l3",
+          "Voltage L3",
+          "V",
+          "Float",
+          "R"
+        ],
+        [
+          "current_l1",
+          "Current L1",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "current_l2",
+          "Current L2",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "current_l3",
+          "Current L3",
+          "A",
+          "Float",
+          "R"
+        ],
+        [
+          "active_power_l1",
+          "Active power L1",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "active_power_l2",
+          "Active power L2",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "active_power_l3",
+          "Active power L3",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "total_power_l1",
+          "Total power L1",
+          "VA",
+          "Float",
+          "R"
+        ],
+        [
+          "total_power_l2",
+          "Total power L2",
+          "VA",
+          "Float",
+          "R"
+        ],
+        [
+          "total_power_l3",
+          "Total power L3",
+          "VA",
+          "Float",
+          "R"
+        ],
+        [
+          "reactive_power_l1",
+          "Reactive power L1",
+          "Var",
+          "Float",
+          "R"
+        ],
+        [
+          "reactive_power_l2",
+          "Reactive power L2",
+          "Var",
+          "Float",
+          "R"
+        ],
+        [
+          "reactive_power_l3",
+          "Reactive power L3",
+          "Var",
+          "Float",
+          "R"
+        ],
+        [
+          "pf_l1",
+          "PF L1",
+          "-",
+          "Float",
+          "R"
+        ],
+        [
+          "pf_l2",
+          "PF L2",
+          "-",
+          "Float",
+          "R"
+        ],
+        [
+          "pf_l3",
+          "PF L3",
+          "-",
+          "Float",
+          "R"
+        ],
+        [
+          "phase_shift_l1",
+          "Phase shift L1",
+          "Angle",
+          "Float",
+          "R"
+        ],
+        [
+          "phase_shift_l2",
+          "Phase shift L2",
+          "Angle",
+          "Float",
+          "R"
+        ],
+        [
+          "phase_shift_l3",
+          "Phase shift L3",
+          "Angle",
+          "Float",
+          "R"
+        ],
+        [
+          "total_active_power",
+          "Total active power",
+          "W",
+          "Float",
+          "R"
+        ],
+        [
+          "total_power",
+          "Total power",
+          "VA",
+          "Float",
+          "R"
+        ],
+        [
+          "total_reactive_power",
+          "Total reactive power",
+          "Var",
+          "Float",
+          "R"
+        ],
+        [
+          "total_pf",
+          "Total PF",
+          "-",
+          "Float",
+          "R"
+        ],
+        [
+          "total_phase_shift",
+          "Total phase shift",
+          "-",
+          "Float",
+          "R"
+        ],
+        [
+          "frequency",
+          "Frequency",
+          "Hz",
+          "Float",
+          "R"
+        ]
+      ]
+    }
+  ],
+  "get-schedule-by-date": [
+    {
+      "plant_id": 2001,
+      "date": "2024-04-15",
+      "schedule": [
+        {
+          "timeOfDay": "00:00",
+          "energyConsumed": "0",
+          "baseProfile": "982.9"
+        },
+        {
+          "timeOfDay": "00:15",
+          "energyConsumed": "0",
+          "baseProfile": "580.87"
+        },
+        {
+          "timeOfDay": "00:30",
+          "energyConsumed": "0",
+          "baseProfile": "721.01"
+        },
+        {
+          "timeOfDay": "00:45",
+          "energyConsumed": "0",
+          "baseProfile": "996.2"
+        },
+        {
+          "timeOfDay": "01:00",
+          "energyConsumed": "0",
+          "baseProfile": "394.0"
+        },
+        {
+          "timeOfDay": "01:15",
+          "energyConsumed": "0",
+          "baseProfile": "800.07"
+        },
+        {
+          "timeOfDay": "01:30",
+          "energyConsumed": "0",
+          "baseProfile": "351.07"
+        },
+        {
+          "timeOfDay": "01:45",
+          "energyConsumed": "0",
+          "baseProfile": "111.53"
+        },
+        {
+          "timeOfDay": "02:00",
+          "energyConsumed": "0",
+          "baseProfile": "813.53"
+        },
+        {
+          "timeOfDay": "02:15",
+          "energyConsumed": "0",
+          "baseProfile": "512.16"
+        },
+        {
+          "timeOfDay": "02:30",
+          "energyConsumed": "0",
+          "baseProfile": "501.06"
+        },
+        {
+          "timeOfDay": "02:45",
+          "energyConsumed": "0",
+          "baseProfile": "959.96"
+        },
+        {
+          "timeOfDay": "03:00",
+          "energyConsumed": "0",
+          "baseProfile": "834.09"
+        },
+        {
+          "timeOfDay": "03:15",
+          "energyConsumed": "0",
+          "baseProfile": "359.13"
+        },
+        {
+          "timeOfDay": "03:30",
+          "energyConsumed": "0",
+          "baseProfile": "848.81"
+        },
+        {
+          "timeOfDay": "03:45",
+          "energyConsumed": "0",
+          "baseProfile": "958.68"
+        },
+        {
+          "timeOfDay": "04:00",
+          "energyConsumed": "0",
+          "baseProfile": "566.79"
+        },
+        {
+          "timeOfDay": "04:15",
+          "energyConsumed": "0",
+          "baseProfile": "144.31"
+        },
+        {
+          "timeOfDay": "04:30",
+          "energyConsumed": "0",
+          "baseProfile": "388.74"
+        },
+        {
+          "timeOfDay": "04:45",
+          "energyConsumed": "0",
+          "baseProfile": "899.11"
+        },
+        {
+          "timeOfDay": "05:00",
+          "energyConsumed": "0",
+          "baseProfile": "703.09"
+        },
+        {
+          "timeOfDay": "05:15",
+          "energyConsumed": "0",
+          "baseProfile": "320.01"
+        },
+        {
+          "timeOfDay": "05:30",
+          "energyConsumed": "0",
+          "baseProfile": "124.59"
+        },
+        {
+          "timeOfDay": "05:45",
+          "energyConsumed": "0",
+          "baseProfile": "510.9"
+        },
+        {
+          "timeOfDay": "06:00",
+          "energyConsumed": "0",
+          "baseProfile": "440.87"
+        },
+        {
+          "timeOfDay": "06:15",
+          "energyConsumed": "0",
+          "baseProfile": "657.76"
+        },
+        {
+          "timeOfDay": "06:30",
+          "energyConsumed": "0",
+          "baseProfile": "814.5"
+        },
+        {
+          "timeOfDay": "06:45",
+          "energyConsumed": "0",
+          "baseProfile": "815.79"
+        },
+        {
+          "timeOfDay": "07:00",
+          "energyConsumed": "0",
+          "baseProfile": "309.67"
+        },
+        {
+          "timeOfDay": "07:15",
+          "energyConsumed": "0",
+          "baseProfile": "863.59"
+        },
+        {
+          "timeOfDay": "07:30",
+          "energyConsumed": "0",
+          "baseProfile": "229.44"
+        },
+        {
+          "timeOfDay": "07:45",
+          "energyConsumed": "0",
+          "baseProfile": "331.08"
+        },
+        {
+          "timeOfDay": "08:00",
+          "energyConsumed": "0",
+          "baseProfile": "860.88"
+        },
+        {
+          "timeOfDay": "08:15",
+          "energyConsumed": "0",
+          "baseProfile": "920.49"
+        },
+        {
+          "timeOfDay": "08:30",
+          "energyConsumed": "0",
+          "baseProfile": "632.63"
+        },
+        {
+          "timeOfDay": "08:45",
+          "energyConsumed": "0",
+          "baseProfile": "687.69"
+        },
+        {
+          "timeOfDay": "09:00",
+          "energyConsumed": "0",
+          "baseProfile": "638.52"
+        },
+        {
+          "timeOfDay": "09:15",
+          "energyConsumed": "0",
+          "baseProfile": "618.0"
+        },
+        {
+          "timeOfDay": "09:30",
+          "energyConsumed": "0",
+          "baseProfile": "251.75"
+        },
+        {
+          "timeOfDay": "09:45",
+          "energyConsumed": "0",
+          "baseProfile": "550.88"
+        },
+        {
+          "timeOfDay": "10:00",
+          "energyConsumed": "0",
+          "baseProfile": "387.51"
+        },
+        {
+          "timeOfDay": "10:15",
+          "energyConsumed": "0",
+          "baseProfile": "335.32"
+        },
+        {
+          "timeOfDay": "10:30",
+          "energyConsumed": "0",
+          "baseProfile": "350.92"
+        },
+        {
+          "timeOfDay": "10:45",
+          "energyConsumed": "0",
+          "baseProfile": "115.34"
+        },
+        {
+          "timeOfDay": "11:00",
+          "energyConsumed": "0",
+          "baseProfile": "642.83"
+        },
+        {
+          "timeOfDay": "11:15",
+          "energyConsumed": "0",
+          "baseProfile": "574.68"
+        },
+        {
+          "timeOfDay": "11:30",
+          "energyConsumed": "0",
+          "baseProfile": "818.24"
+        },
+        {
+          "timeOfDay": "11:45",
+          "energyConsumed": "0",
+          "baseProfile": "124.57"
+        },
+        {
+          "timeOfDay": "12:00",
+          "energyConsumed": "0",
+          "baseProfile": "945.35"
+        },
+        {
+          "timeOfDay": "12:15",
+          "energyConsumed": "0",
+          "baseProfile": "454.18"
+        },
+        {
+          "timeOfDay": "12:30",
+          "energyConsumed": "0",
+          "baseProfile": "960.36"
+        },
+        {
+          "timeOfDay": "12:45",
+          "energyConsumed": "0",
+          "baseProfile": "542.24"
+        },
+        {
+          "timeOfDay": "13:00",
+          "energyConsumed": "0",
+          "baseProfile": "813.47"
+        },
+        {
+          "timeOfDay": "13:15",
+          "energyConsumed": "0",
+          "baseProfile": "148.35"
+        },
+        {
+          "timeOfDay": "13:30",
+          "energyConsumed": "0",
+          "baseProfile": "844.72"
+        },
+        {
+          "timeOfDay": "13:45",
+          "energyConsumed": "0",
+          "baseProfile": "566.78"
+        },
+        {
+          "timeOfDay": "14:00",
+          "energyConsumed": "0",
+          "baseProfile": "140.91"
+        },
+        {
+          "timeOfDay": "14:15",
+          "energyConsumed": "0",
+          "baseProfile": "146.45"
+        },
+        {
+          "timeOfDay": "14:30",
+          "energyConsumed": "0",
+          "baseProfile": "976.06"
+        },
+        {
+          "timeOfDay": "14:45",
+          "energyConsumed": "0",
+          "baseProfile": "230.76"
+        },
+        {
+          "timeOfDay": "15:00",
+          "energyConsumed": "0",
+          "baseProfile": "235.51"
+        },
+        {
+          "timeOfDay": "15:15",
+          "energyConsumed": "0",
+          "baseProfile": "787.42"
+        },
+        {
+          "timeOfDay": "15:30",
+          "energyConsumed": "0",
+          "baseProfile": "238.09"
+        },
+        {
+          "timeOfDay": "15:45",
+          "energyConsumed": "0",
+          "baseProfile": "283.61"
+        },
+        {
+          "timeOfDay": "16:00",
+          "energyConsumed": "0",
+          "baseProfile": "500.28"
+        },
+        {
+          "timeOfDay": "16:15",
+          "energyConsumed": "0",
+          "baseProfile": "548.13"
+        },
+        {
+          "timeOfDay": "16:30",
+          "energyConsumed": "0",
+          "baseProfile": "897.75"
+        },
+        {
+          "timeOfDay": "16:45",
+          "energyConsumed": "0",
+          "baseProfile": "889.1"
+        },
+        {
+          "timeOfDay": "17:00",
+          "energyConsumed": "0",
+          "baseProfile": "461.59"
+        },
+        {
+          "timeOfDay": "17:15",
+          "energyConsumed": "0",
+          "baseProfile": "979.94"
+        },
+        {
+          "timeOfDay": "17:30",
+          "energyConsumed": "0",
+          "baseProfile": "935.71"
+        },
+        {
+          "timeOfDay": "17:45",
+          "energyConsumed": "0",
+          "baseProfile": "370.95"
+        },
+        {
+          "timeOfDay": "18:00",
+          "energyConsumed": "0",
+          "baseProfile": "565.45"
+        },
+        {
+          "timeOfDay": "18:15",
+          "energyConsumed": "0",
+          "baseProfile": "291.24"
+        },
+        {
+          "timeOfDay": "18:30",
+          "energyConsumed": "0",
+          "baseProfile": "887.37"
+        },
+        {
+          "timeOfDay": "18:45",
+          "energyConsumed": "0",
+          "baseProfile": "728.83"
+        },
+        {
+          "timeOfDay": "19:00",
+          "energyConsumed": "0",
+          "baseProfile": "182.1"
+        },
+        {
+          "timeOfDay": "19:15",
+          "energyConsumed": "0",
+          "baseProfile": "779.9"
+        },
+        {
+          "timeOfDay": "19:30",
+          "energyConsumed": "0",
+          "baseProfile": "964.36"
+        },
+        {
+          "timeOfDay": "19:45",
+          "energyConsumed": "0",
+          "baseProfile": "861.72"
+        },
+        {
+          "timeOfDay": "20:00",
+          "energyConsumed": "0",
+          "baseProfile": "972.29"
+        },
+        {
+          "timeOfDay": "20:15",
+          "energyConsumed": "0",
+          "baseProfile": "994.4"
+        },
+        {
+          "timeOfDay": "20:30",
+          "energyConsumed": "0",
+          "baseProfile": "142.54"
+        },
+        {
+          "timeOfDay": "20:45",
+          "energyConsumed": "0",
+          "baseProfile": "728.41"
+        },
+        {
+          "timeOfDay": "21:00",
+          "energyConsumed": "0",
+          "baseProfile": "728.35"
+        },
+        {
+          "timeOfDay": "21:15",
+          "energyConsumed": "0",
+          "baseProfile": "965.93"
+        },
+        {
+          "timeOfDay": "21:30",
+          "energyConsumed": "0",
+          "baseProfile": "630.71"
+        },
+        {
+          "timeOfDay": "21:45",
+          "energyConsumed": "0",
+          "baseProfile": "355.33"
+        },
+        {
+          "timeOfDay": "22:00",
+          "energyConsumed": "0",
+          "baseProfile": "616.6"
+        },
+        {
+          "timeOfDay": "22:15",
+          "energyConsumed": "0",
+          "baseProfile": "199.13"
+        },
+        {
+          "timeOfDay": "22:30",
+          "energyConsumed": "0",
+          "baseProfile": "973.61"
+        },
+        {
+          "timeOfDay": "22:45",
+          "energyConsumed": "0",
+          "baseProfile": "891.02"
+        },
+        {
+          "timeOfDay": "23:00",
+          "energyConsumed": "0",
+          "baseProfile": "579.11"
+        },
+        {
+          "timeOfDay": "23:15",
+          "energyConsumed": "0",
+          "baseProfile": "942.43"
+        },
+        {
+          "timeOfDay": "23:30",
+          "energyConsumed": "0",
+          "baseProfile": "406.18"
+        },
+        {
+          "timeOfDay": "23:45",
+          "energyConsumed": "0",
+          "baseProfile": "710.04"
+        }
+      ]
+    }
+  ]
 }
