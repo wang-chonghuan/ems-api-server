@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "json-server on Heroku",
   "scripts": {
-    "start": "json-server --watch db.json -p $PORT"
+    "start": "json-server db.json -p $PORT"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.23"
