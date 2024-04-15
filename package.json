@@ -1,8 +1,14 @@
 {
+  "name": "json-server-heroku",
+  "version": "1.0.0",
+  "description": "json-server on Heroku",
   "scripts": {
-    "start": "json-server db.json --port $PORT --no-static"
+    "start": "json-server --watch db.json -p $PORT"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.23"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
